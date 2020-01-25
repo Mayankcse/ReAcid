@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Future Project</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+<header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="courses.html">Courses</a></li>
+			<li><a href="index.html">Login</a></li>
+			<li><a href="signup.html">Signup</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="about.html">Developers</a></li>
+			
+			
+		</ol>
+	</nav>
+	
+</header>
+<header>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+.mySlides {display:none;}
+</style>
+<div  style="max-width: width 500px">
+  <img class="mySlides" src="images/C.png" style="width:100%">
+  <img class="mySlides" src="images/cpp_home.png" style="width:100%">
+  <img class="mySlides" src="images/java1.jpg" style="width:100%">
+  <img class="mySlides" src="images/csharp.jpg" style="width:100%">
+</div>
+  <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</header>
+<section id="main"> 
+
+	<div class="login-form bordered">
+	<form action="/api/login" method="post">
+		<label for="username">E-mail:</label>
+		<input type="text" name="username" placeholder="Enter E-mail"id="username" /><br>
+		<label for="password">Password:</label>
+		<input type="password" placeholder="min 8 digit"name="password" id="password" /><br>
+		<input type="checkbox" name="remember" id="remember">
+		<label for="remember">Remember Me</label><br>
+
+        <input type="submit" name="loginbutton" value="Login">
+        <input type="reset" name="cancelbutton" value="Cancel">
+		
+	</form>
+</div>
+<div id="result">
+	#Courses will appear here.
+
+</div>
+</section><br>
+	<footer>
+	&copy;<strong> 2017 Future Project.com</strong>
+	</footer>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
